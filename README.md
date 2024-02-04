@@ -56,7 +56,7 @@ Building a landing page and making it look like the [desing](https://github.com/
 
    For the product features section, ensure the following minimum requirements are met:
    
-   - The "Features" section with descriptive text should be placed within the Bootstrap Grid.
+   - **The "Features" section with descriptive text should be placed within the Bootstrap Grid.**
    - Utilize the Bootstrap Tabs component, customizing its styles to align with our website.
 
 * #### Additional Resources
