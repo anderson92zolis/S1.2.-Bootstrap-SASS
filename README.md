@@ -41,7 +41,7 @@ Building a landing page and making it look like the [desing](https://github.com/
       - Implement Bootstrap's responsive grid system to ensure optimal display on tablets and mobile devices.
    
    4. **SASS Styling:**
-      - Customize the primary and secondary colors of Bootstrap using SASS. Create an "main.scss" file to manage these customizations.
+      - Customize the primary and secondary colors of Bootstrap using SASS. Create an **"main.scss"** file to manage these customizations.
    
    5. **Color Variables:**
       - Define the following color variables in your SASS file for button colors:
