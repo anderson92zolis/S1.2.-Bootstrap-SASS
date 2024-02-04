@@ -19,23 +19,13 @@ Building a landing page and making it look like the [desing](https://github.com/
 
 * In this exercise we will begin with the main part, which is the contingut that users see when entering the website: [Landing page](https://github.com/anderson92zolis/S1.2.-Bootstrap-SASS/blob/main/Recursos%20projecte%20sprint%201.2/Dise%C3%B1o/desktop-active-states.jpg)
 
-* Implementation:
-
 #### NavBar Implementation
 
-   * To enhance user navigation, we will incorporate a fixed top navigation bar. We'll achieve this by utilizing the Bootstrap "navBar" component.
+   * To enhance user navigation, we will incorporate a fixed top navigation bar. We'll achieve this by utilizing the Bootstrap **"navBar" component.**
 
-##### Components Used:
-
-   - NavBar from Bootstrap
-
-#### Main Content Layout
+#### Grid system
 
    * The main content of the landing page will be organized using Bootstrap's responsive grid system. This approach ensures a seamless user experience across different devices. Specifically, we'll divide the screen into two columns. On the left, you'll find the slogan, description, and buttons, while the image will be displayed on the right.
-
-##### Components Used:
-
-   - Grid System from Bootstrap
 
 #### Minimum Requirements
 
