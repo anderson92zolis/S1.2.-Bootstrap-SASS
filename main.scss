@@ -1,4 +1,18 @@
-$primaryColor: #5265E1;
+// main.scss
 
-$secundaryColor: #FA5959;
+// Import Bootstrap
+// @import "~node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+// Define custom color variables
+$primary-color: #5265E1;
+$secondary-color: #FA5959;
+
+
+// @import "../node_modules/bootstrap/dist/css/bootstrap.css"; // Adjust path accordingly
+
+.btn-outline-primary {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+
 
