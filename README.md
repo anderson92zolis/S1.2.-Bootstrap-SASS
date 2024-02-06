@@ -72,7 +72,6 @@ Building a landing page and making it look like the [desing](https://github.com/
 * #### As the cards in the image are very different from Bootstrap cards, in this exercise we give you the possibility of either customising Bootstrap cards or creating your own classes to layout them.
 
    * Minimum requirements:
-   
    - Responsive.
    - Bootstrap buttons in the primary colour defined in **exercise 1**.
  
