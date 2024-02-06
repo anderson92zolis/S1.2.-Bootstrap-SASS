@@ -65,9 +65,9 @@ Building a landing page and making it look like the [desing](https://github.com/
    
    - Ensure the design is responsive for optimal viewing on various devices.
  
-### Task 3: Product Section
+### Task 3: Download Section
 
-* You have to build the third part of the website [Product area:](https://github.com/anderson92zolis/S1.2.-Bootstrap-SASS/blob/main/Recursos%20projecte%20sprint%201.2/Dise%C3%B1o/desktop-active-states.jpg)
+* You have to build the third part of the website [download area:](https://github.com/anderson92zolis/S1.2.-Bootstrap-SASS/blob/main/Recursos%20projecte%20sprint%201.2/Dise%C3%B1o/desktop-active-states.jpg)
 
 * #### As the cards in the image are very different from Bootstrap cards, in this exercise we give you the possibility of either customising Bootstrap cards or creating your own classes to layout them.
 
