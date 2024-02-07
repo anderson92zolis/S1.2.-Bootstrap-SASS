@@ -1,7 +1,7 @@
 // main.scss
 
 // Import Bootstrap
-// @import "~node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "~node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 // Define custom color variables
 $primary-color: #5265E1;
@@ -15,4 +15,8 @@ $secondary-color: #FA5959;
   border-color: $secondary-color;
 }
 
+.dotted-hr {
+  border: none;
+  border-top: 6px dotted gray; 
+}
 
