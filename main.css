@@ -1,6 +1,12 @@
+@import "~node_modules/bootstrap/dist/css/bootstrap.min.css";
 .btn-outline-primary {
   background-color: #FA5959;
   border-color: #FA5959;
+}
+
+.dotted-hr {
+  border: none;
+  border-top: 6px dotted gray;
 }
 
 /*# sourceMappingURL=main.css.map */
