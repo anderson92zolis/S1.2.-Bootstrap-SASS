@@ -79,13 +79,13 @@ Building a landing page and making it look like the [desing](https://github.com/
 
 Congratulations! You're almost done with Level 1! Now, [it's time to develop the FAQ section](https://github.com/anderson92zolis/S1.2.-Bootstrap-SASS/blob/main/Recursos%20projecte%20sprint%201.2/Dise%C3%B1o/desktop-active-states.jpg)
 
-#### Minimum Requirements
+* #### Minimum Requirements
 
-      For the FAQs section, ensure the following minimum requirements are met:
-      
-      - Utilize the Bootstrap "Accordion" component and customize classes to adapt it to the design.
-      - Make the design responsive.
-      - Include a Bootstrap button.
+   * For the FAQs section, ensure the following minimum requirements are met:
+   
+   - Utilize the Bootstrap "Accordion" component and customize classes to adapt it to the design.
+   - Make the design responsive.
+   - Include a Bootstrap button.
 
 ## Level 2
 
