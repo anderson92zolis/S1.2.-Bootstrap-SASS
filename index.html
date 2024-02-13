@@ -1,339 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>S1.2.-Bootstrap-SASS</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="main">
+      <!-- Landing page Task 1-->
+      <div class="container">
+        <header
+          class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <img
+              src="./Recursos projecte sprint 1.2/Imagenes/logo-bookmark.svg"
+              alt="logo-bookmark"
+            />
+            <span class="fs-4"></span>
+          </a>
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link">FEATURES</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">PRICING</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+          </ul>
+          <button type="button" class="btn btn-outline-primary text-white me-2">
+            Login
+          </button>
+        </header>
+      </div>
 
-        <!-- Landing page Task 1-->
-        <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                <a href="/"
-                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <img src="./Recursos projecte sprint 1.2/Imagenes/logo-bookmark.svg" alt="logo-bookmark">
-                    <span class="fs-4"></span>
-                </a>
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" class="nav-link">FEATURES</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">PRICING</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
-                </ul>
-                <button type="button" class="btn btn-outline-primary text-white me-2">Login</button>
-            </header>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./Recursos projecte sprint 1.2/Imagenes/illustration-hero.svg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              A Simple Bookmark Manager
+            </h1>
+            <p class="lead">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                Get it on Chrome
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Get it on Firefox
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Feature-->
+      <div class="separador"></div>
+      <section class="container-lg">
+        <div class="row text-center align-items-center justify-content-center">
+          <div class="col-lg-6 col-md-6 col-sm-11 text-justify">
+            <h2 class="fw-bold">Features</h2>
+            <p class="mt-3 mx-3 text-black-50 fw-normal fs-6">
+              Our aim is to make it quick and easy for you to access your
+              favorite websites. Your bookmarks sync between your devices so you
+              can access them on the go.
+            </p>
+          </div>
         </div>
 
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="./Recursos projecte sprint 1.2/Imagenes/illustration-hero.svg"
-                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
-                        loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A Simple Bookmark Manager
-                    </h1>
-                    <p class="lead">A clean and simple interface to organize your favourite websites. Open a new browser
-                        tab and see your sites load instantly. Try it for free.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get it on Chrome</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get it on Firefox</button>
-                    </div>
-                </div>
+        <div class="row mx-5 mt-3">
+          <nav class="d-flex justify-content-center mt-2">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <!--LinkTab1-->
+              <button
+                class="nav-link nav-feature active fw-semibold"
+                id="nav-home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-1"
+                type="button"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >
+                Simple Bookmarking
+              </button>
+              <!--LinkTab2-->
+              <button
+                class="nav-link nav-feature fw-semibold text-black-50"
+                id="nav-profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-2"
+                type="button"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+              >
+                Speedy Searching
+              </button>
+              <!--LinkTab3-->
+              <button
+                class="nav-link nav-feature fw-semibold text-black-50"
+                id="nav-disabled-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-3"
+                type="button"
+                role="tab"
+                aria-controls="nav-disabled"
+                aria-selected="false"
+              >
+                Easy Sharing
+              </button>
             </div>
-
+          </nav>
         </div>
 
-
-
-
-        <!-- Section Feature-->
-        <div class="separador"></div>
-        <section class="container-lg">
-
-            <div class="row text-center align-items-center justify-content-center ">
-                <div class="col-lg-6 col-md-6 col-sm-11 text-justify">
-                    <h2 class="fw-bold">Features</h2>
-                    <p class="mt-3 mx-3 text-black-50 fw-normal fs-6">
-                        Our aim is to make it quick and easy for you to access your favorite websites. Your
-                        bookmarks sync between
-                        your devices so you can access them on the go.
-                    </p>
+        <div class="tab-content mx-5" id="nav-tabContent">
+          <!--Tab1-->
+          <div
+            class="tab-pane fade show active"
+            id="nav-1"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+            tabindex="0"
+          >
+            <div class="row align-items-center py-5">
+              <div class="col-ms-12 col-md-6 position-relative">
+                <div class="background-form2 position-absolute"></div>
+                <img
+                  src="./Recursos projecte sprint 1.2/Imagenes/illustration-features-tab-1.svg"
+                  class="img-fluid"
+                  alt="tab1"
+                />
+              </div>
+              <div class="col-ms-12 col-md-6 mt-sm-5 p-5 text-center">
+                <h1 class="text-md-start text-center fs-3 fw-bold">
+                  Bookmark in one click
+                </h1>
+                <div class="col-md-12">
+                  <p class="text-md-start text-center mt-3 text-black-50">
+                    Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favorite sites.
+                  </p>
                 </div>
+                <div class="col-sm-12 text-md-start text-center">
+                  <button
+                    class="btn btn-primary shadow mt-3 d-flex d-none d-sm-inline"
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
             </div>
-
-            <div class="row mx-5 mt-3 ">
-                <nav class="d-flex justify-content-center mt-2">
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <!--LinkTab1-->
-                        <button class="nav-link nav-feature active fw-semibold" id="nav-home-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-home"
-                            aria-selected="true">Simple Bookmarking</button>
-                        <!--LinkTab2-->
-                        <button class="nav-link nav-feature fw-semibold text-black-50" id="nav-profile-tab"
-                            data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab"
-                            aria-controls="nav-profile" aria-selected="false">Speedy Searching</button>
-                        <!--LinkTab3-->
-                        <button class="nav-link nav-feature fw-semibold text-black-50" id="nav-disabled-tab"
-                            data-bs-toggle="tab" data-bs-target="#nav-3" type="button" role="tab"
-                            aria-controls="nav-disabled" aria-selected="false">Easy Sharing</button>
-                    </div>
-                </nav>
+          </div>
+          <!--Tab2-->
+          <div
+            class="tab-pane fade"
+            id="nav-2"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+            tabindex="0"
+          >
+            <div class="row align-items-center py-5">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img
+                  src="./Recursos projecte sprint 1.2/Imagenes/illustration-features-tab-2.svg"
+                  class="img-fluid"
+                  alt="tab2"
+                />
+              </div>
+              <div class="col-ms-12 col-md-12 col-lg-5 ms-5 text-center">
+                <h1 class="text-md-start fs-3 fw-bold mt-5">
+                  Speedy Searching
+                </h1>
+                <div class="col-md-12">
+                  <p class="text-md-start text-center mt-3 text-black-50">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ipsa delectus natus nihil! In voluptatem rem aperiam
+                    quibusdam commodi. Modi architecto ut dolorem ex numquam
+                    aspernatur dolore temporibus quidem porro odio.
+                  </p>
+                </div>
+                <div class="col-sm-12 text-md-start text-center">
+                  <button
+                    class="btn btn-primary shadow mt-3 d-flex d-none d-sm-inline"
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
             </div>
-
-
-            <div class="tab-content mx-5" id="nav-tabContent">
-                <!--Tab1-->
-                <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-home-tab"
-                    tabindex="0">
-
-                    <div class="row align-items-center py-5">
-                        <div class="col-ms-12 col-md-6 position-relative ">
-                            <div class="background-form2 position-absolute"></div>
-                            <img src="./Recursos projecte sprint 1.2/Imagenes/illustration-features-tab-1.svg"
-                                class="img-fluid" alt="tab1" />
-                        </div>
-                        <div class="col-ms-12 col-md-6 mt-sm-5 p-5 text-center">
-                            <h1 class="text-md-start text-center fs-3 fw-bold">Bookmark in one click</h1>
-                            <div class="col-md-12">
-                                <p class="text-md-start text-center mt-3 text-black-50">
-                                    Organize your bookmarks however you like. Our simple drag-and-drop interface
-                                    gives you complete control
-                                    over how you manage your favorite sites.
-                                </p>
-                            </div>
-                            <div class="col-sm-12 text-md-start text-center">
-                                <button class="btn btn-primary shadow mt-3 d-flex d-none d-sm-inline">
-                                    More Info
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <!--Tab3-->
+          <div
+            class="tab-pane fade"
+            id="nav-3"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+            tabindex="0"
+          >
+            <div class="row align-items-center py-5">
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <img
+                  src="./Recursos projecte sprint 1.2/Imagenes/illustration-features-tab-3.svg"
+                  class="img-fluid"
+                  alt="tab3"
+                />
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6 text-center">
+                <h1 class="ext-md-start fs-3 fw-bold mt-5">Easy Sharing</h1>
+                <div class="col-md-12">
+                  <p class="text-md-start text-center mt-3 text-black-50">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ipsa delectus natus nihil! In voluptatem rem aperiam
+                    quibusdam commodi. Modi architecto ut dolorem ex numquam
+                    aspernatur dolore temporibus quidem porro odio.
+                  </p>
                 </div>
-                <!--Tab2-->
-                <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                    <div class="row align-items-center py-5">
-                        <div class="col-sm-12 col-md-12 col-lg-6">
-                            <img src="./Recursos projecte sprint 1.2/Imagenes/illustration-features-tab-2.svg"
-                                class="img-fluid" alt="tab2" />
-                        </div>
-                        <div class="col-ms-12 col-md-12 col-lg-5 ms-5 text-center">
-                            <h1 class="text-md-start fs-3 fw-bold mt-5">Speedy Searching</h1>
-                            <div class="col-md-12">
-                                <p class="text-md-start text-center mt-3 text-black-50">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa delectus natus
-                                    nihil! In voluptatem
-                                    rem aperiam quibusdam commodi. Modi architecto ut dolorem ex numquam aspernatur
-                                    dolore temporibus
-                                    quidem porro odio.
-                                </p>
-                            </div>
-                            <div class="col-sm-12 text-md-start text-center">
-                                <button class="btn btn-primary shadow mt-3 d-flex d-none d-sm-inline">
-                                    More Info
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-12 text-md-start text-center">
+                  <button
+                    class="btn btn-primary shadow mt-3 d-flex d-none d-sm-inline"
+                  >
+                    More Info
+                  </button>
                 </div>
-                <!--Tab3-->
-                <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                    <div class="row align-items-center py-5">
-                        <div class="col-sm-12 col-md-12 col-lg-6">
-                            <img src="./Recursos projecte sprint 1.2/Imagenes/illustration-features-tab-3.svg"
-                                class="img-fluid" alt="tab3" />
-                        </div>
-                        <div class="col-sm-12 col-md-12 col-lg-6 text-center">
-                            <h1 class="ext-md-start fs-3 fw-bold mt-5">Easy Sharing</h1>
-                            <div class="col-md-12">
-                                <p class="text-md-start text-center mt-3 text-black-50">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa delectus natus
-                                    nihil! In voluptatem
-                                    rem aperiam quibusdam commodi. Modi architecto ut dolorem ex numquam aspernatur
-                                    dolore temporibus
-                                    quidem porro odio.
-                                </p>
-                            </div>
-                            <div class="col-sm-12 text-md-start text-center">
-                                <button class="btn btn-primary shadow mt-3 d-flex d-none d-sm-inline">
-                                    More Info
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <!-- Download Section-->
 
-        <!-- Download Section-->
-
-        <div class="container">
-
-            <div class="row text-center align-items-center justify-content-center ">
-                <div class="col-lg-6 col-md-6 col-sm-11 text-justify">
-                    <h2 class="fw-bold">Download the extension</h2>
-                    <p class="mt-3 mx-3 text-black-50 fw-normal fs-6">
-                        We've got more browsers in the pipeline. Please do let us know if
-                        you've got a favourite you'd like us to prioritize.
-                    </p>
-                </div>
-            </div>
-
-            <main>
-                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                    <!--google card -->
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm ">
-                            <img src="./Recursos projecte sprint 1.2/Imagenes/logo-chrome.svg"
-                                class=" img-fluid mx-auto my-4" alt="google photo" />
-                            <div class="card-body">
-                                <h5 class="card-title">Add to Chrome</h5>
-                                <p class="card-text">Minimum version 62</p>
-                                <hr class="dotted-hr ">
-                                <button type="button" class="w-100 btn btn-lg btn-primary">Add & Install
-                                    Extension</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--mozila card -->
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm" style="margin-top: 25px;">
-                            <img src="./Recursos projecte sprint 1.2/Imagenes/logo-firefox.svg"
-                                class=" img-fluid mx-auto my-4" alt="mozila photo" />
-                            <div class="card-body">
-                                <h5 class="card-title">Add to Firefox</h5>
-                                <p class="card-text">Minimum version 55</p>
-                                <hr class="dotted-hr ">
-                                <button type="button" class="w-100 btn btn-lg btn-primary">Add & Install
-                                    Extension</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--opera card -->
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm" style="margin-top: 50px;">
-                            <img src="./Recursos projecte sprint 1.2/Imagenes/logo-opera.svg"
-                                class=" img-fluid mx-auto my-4" alt="opera photo" />
-                            <div class="card-body">
-                                <h5 class="card-title">Add to Opera</h5>
-                                <p class="card-text">Minimum version 46</p>
-                                <hr class="dotted-hr ">
-                                <button type="button" class="w-100 btn btn-lg btn-primary">Add & Install
-                                    Extension</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
+      <div class="container">
+        <div class="row text-center align-items-center justify-content-center">
+          <div class="col-lg-6 col-md-6 col-sm-11 text-justify">
+            <h2 class="fw-bold">Download the extension</h2>
+            <p class="mt-3 mx-3 text-black-50 fw-normal fs-6">
+              We've got more browsers in the pipeline. Please do let us know if
+              you've got a favourite you'd like us to prioritize.
+            </p>
+          </div>
         </div>
 
-        <!-- FAQS Section-->
-        <div class="container col-lg-5 col-md-6 col-sm-12">
-            <div class="row text-center align-items-center justify-content-center ">
-                <div class="col-lg-6 col-md-6 col-sm-11 text-justify">
-                    <h2 class="fw-bold">Frequently Asked Questions</h2>
-                    <p class="mt-3 mx-3 text-black-50 fw-normal fs-6">
-                        Here are some of our FAQs. Is you have any other questions you'd like answered please feel free
-                        to email us.
-                    </p>
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <!--google card -->
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <img
+                  src="./Recursos projecte sprint 1.2/Imagenes/logo-chrome.svg"
+                  class="img-fluid mx-auto my-4"
+                  alt="google photo"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Add to Chrome</h5>
+                  <p class="card-text">Minimum version 62</p>
+                  <hr class="dotted-hr" />
+                  <button type="button" class="w-100 btn btn-lg btn-primary">
+                    Add & Install Extension
+                  </button>
                 </div>
+              </div>
             </div>
-            
-            <div class="accordion" id="accordionExample">
-            <!-- WHAT-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header " id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            What is Bookmark?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, in sint rem autem
-                            reprehenderit ad atque cumque deleniti illo ex. Iusto consequatur aliquid praesentium magni
-                            exercitationem amet possimus laboriosam delectus. Temporibus voluptates repellendus error
-                            fugit enim suscipit eos dolor dolorum!
-                        </div>
-                    </div>
+            <!--mozila card -->
+            <div class="col">
+              <div
+                class="card mb-4 rounded-3 shadow-sm"
+                style="margin-top: 25px"
+              >
+                <img
+                  src="./Recursos projecte sprint 1.2/Imagenes/logo-firefox.svg"
+                  class="img-fluid mx-auto my-4"
+                  alt="mozila photo"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Add to Firefox</h5>
+                  <p class="card-text">Minimum version 55</p>
+                  <hr class="dotted-hr" />
+                  <button type="button" class="w-100 btn btn-lg btn-primary">
+                    Add & Install Extension
+                  </button>
                 </div>
-                <!-- HOW-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            How can I request a new browser?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, in sint rem autem
-                            reprehenderit ad atque cumque deleniti illo ex. Iusto consequatur aliquid praesentium magni
-                            exercitationem amet possimus laboriosam delectus. Temporibus voluptates repellendus error
-                            fugit enim suscipit eos dolor dolorum!
-                        </div>
-                    </div>
-                </div>
-                <!-- IS THERE-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Is there a mobile app?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, in sint rem autem
-                            reprehenderit ad atque cumque deleniti illo ex. Iusto consequatur aliquid praesentium magni
-                            exercitationem amet possimus laboriosam delectus. Temporibus voluptates repellendus error
-                            fugit enim suscipit eos dolor dolorum!
-                        </div>
-                    </div>
-                </div>
-                <!-- WHAT-->
-                <div class="accordion-item ">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            What about other Chromium browsers?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, in sint rem autem
-                            reprehenderit ad atque cumque deleniti illo ex. Iusto consequatur aliquid praesentium magni
-                            exercitationem amet possimus laboriosam delectus. Temporibus voluptates repellendus error
-                            fugit enim suscipit eos dolor dolorum!
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-4"></div>
-                <div>
-                    <button type="button" class="btn btn-lg btn-primary  d-grid gap-2 mx-auto">More Info</button>
-                </div>
-
+              </div>
             </div>
+            <!--opera card -->
+            <div class="col">
+              <div
+                class="card mb-4 rounded-3 shadow-sm"
+                style="margin-top: 50px"
+              >
+                <img
+                  src="./Recursos projecte sprint 1.2/Imagenes/logo-opera.svg"
+                  class="img-fluid mx-auto my-4"
+                  alt="opera photo"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Add to Opera</h5>
+                  <p class="card-text">Minimum version 46</p>
+                  <hr class="dotted-hr" />
+                  <button type="button" class="w-100 btn btn-lg btn-primary">
+                    Add & Install Extension
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
 
+      <!-- FAQS Section-->
+      <div class="container col-lg-5 col-md-6 col-sm-12">
+        <div class="row text-center align-items-center justify-content-center">
+          <div class="col-lg-6 col-md-6 col-sm-11 text-justify">
+            <h2 class="fw-bold">Frequently Asked Questions</h2>
+            <p class="mt-3 mx-3 text-black-50 fw-normal fs-6">
+              Here are some of our FAQs. Is you have any other questions you'd
+              like answered please feel free to email us.
+            </p>
+          </div>
         </div>
 
-
-
+        <div class="accordion" id="accordionExample">
+          <!-- WHAT-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What is Bookmark?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis, in sint rem autem reprehenderit ad atque cumque
+                deleniti illo ex. Iusto consequatur aliquid praesentium magni
+                exercitationem amet possimus laboriosam delectus. Temporibus
+                voluptates repellendus error fugit enim suscipit eos dolor
+                dolorum!
+              </div>
+            </div>
+          </div>
+          <!-- HOW-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How can I request a new browser?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis, in sint rem autem reprehenderit ad atque cumque
+                deleniti illo ex. Iusto consequatur aliquid praesentium magni
+                exercitationem amet possimus laboriosam delectus. Temporibus
+                voluptates repellendus error fugit enim suscipit eos dolor
+                dolorum!
+              </div>
+            </div>
+          </div>
+          <!-- IS THERE-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Is there a mobile app?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis, in sint rem autem reprehenderit ad atque cumque
+                deleniti illo ex. Iusto consequatur aliquid praesentium magni
+                exercitationem amet possimus laboriosam delectus. Temporibus
+                voluptates repellendus error fugit enim suscipit eos dolor
+                dolorum!
+              </div>
+            </div>
+          </div>
+          <!-- WHAT-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                What about other Chromium browsers?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis, in sint rem autem reprehenderit ad atque cumque
+                deleniti illo ex. Iusto consequatur aliquid praesentium magni
+                exercitationem amet possimus laboriosam delectus. Temporibus
+                voluptates repellendus error fugit enim suscipit eos dolor
+                dolorum!
+              </div>
+            </div>
+          </div>
+          <div class="mt-4"></div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-lg btn-primary d-grid gap-2 mx-auto"
+            >
+              More Info
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Footer-->
 
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+   
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
+    </body>
 </html>
